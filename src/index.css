@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Almarai';
+  src: url('/fonts/Almarai/Almarai-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Almarai';
+  src: url('/fonts/Almarai/Almarai-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Almarai';
+  src: url('/fonts/Almarai/Almarai-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Almarai';
+  src: url('/fonts/Almarai/Almarai-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  /* Colors - Luxury Corporate Theme */
+  --color-primary: #0B1F3A;    /* Midnight Navy */
+  --color-secondary: #1E5AA8;  /* Royal Blue */
+  --color-accent: #C89B3C;     /* Luxury Gold */
+  --color-surface: #FFFFFF;    /* Surface White */
+  --color-bg-soft: #F8FAFC;    /* Soft White Background */
+  
+  --color-text-main: #1E293B;  /* Dark Gray for readability */
+  --color-text-secondary: #64748B; /* Medium Gray for subtitles */
+  
+  --color-success: #10B981; /* Emerald */
+  --color-warning: #F59E0B; /* Amber */
+  --color-error: #DC2626; /* Red */
+  
+  /* Typography */
+  --font-sans: "Outfit", "Almarai", system-ui, -apple-system, sans-serif;
+  --font-serif: "Outfit", "Almarai", Georgia, serif;
+}
+
+/* Custom base styles */
+@layer base {
+  body {
+    background-color: var(--color-bg-soft);
+    color: var(--color-text-main);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Utilities for glassmorphism */
+@layer utilities {
+  .glass {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .glass-dark {
+    background: rgba(11, 31, 58, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
