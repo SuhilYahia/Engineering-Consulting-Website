@@ -45,6 +45,3 @@ export default function HeroAnimation3D() {
     </div>
   );
 }
-
-
-

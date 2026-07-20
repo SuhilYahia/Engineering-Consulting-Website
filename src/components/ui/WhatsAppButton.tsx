@@ -4,7 +4,7 @@ export default function WhatsAppButton() {
   // Pre-filled message
   const message = "مرحباً، أود الاستفسار عن خدماتكم الهندسية.";
   // Add company WhatsApp number here (with country code, e.g., 966...)
-  const phoneNumber = "966500000000"; 
+  const phoneNumber = "966502284175"; 
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
   return (

@@ -104,8 +104,7 @@ export default function ContactUs() {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-primary mb-2">{isAr ? 'الهاتف' : 'Phone'}</h3>
-                    <p className="text-text-secondary leading-relaxed" dir="ltr">+966 50 000 0000</p>
-                    <p className="text-text-secondary leading-relaxed" dir="ltr">+966 11 000 0000</p>
+                    <p className="text-text-secondary leading-relaxed" dir="ltr">+966 50 228 4175</p>
                   </div>
                 </div>
 
